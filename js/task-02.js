@@ -1,16 +1,18 @@
 const ingredients = ["Potatoes", "Mushrooms", "Garlic", "Tomatos", "Herbs", "Condiments"];
 
 const listOfIngredient = document.querySelector(`#ingredients`);
-console.log(listOfIngredient);
+
+const liArray = [];
 
 for (const ingredient of ingredients) {
 	const liEl = document.createElement("li");
 	liEl.textContent = `${ingredient}`;
 	liEl.classList.add(`item`);
 
-	console.log(liEl);
-
-	listOfIngredient.append(liEl);
+	liArray.push(liEl);
+	// console.log(liArray);
 }
 
-console.log(listOfIngredient);
+listOfIngredient.append(...liArray);
+
+// console.log(listOfIngredient);
