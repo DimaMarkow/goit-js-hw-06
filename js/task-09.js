@@ -8,9 +8,11 @@ const refs = {
 };
 
 const clickHandle = () => {
-	// console.log(getRandomHexColor());
-	document.body.style.backgroundColor = getRandomHexColor();
-	refs.span.textContent = getRandomHexColor();
+	const newColor = getRandomHexColor();
+	console.log(newColor);
+
+	document.body.style.backgroundColor = `${newColor}`;
+	refs.span.textContent = newColor;
 };
 
 refs.button.addEventListener(`click`, clickHandle);

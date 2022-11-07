@@ -16,7 +16,12 @@ const submitHandler = event => {
 		return console.log("Все поля должны быть заполнены!");
 	}
 
-	console.log(`Email: ${email.value}, Password: ${password.value}`);
+	const objectEl = {
+		email: email.value,
+		password: password.value,
+	};
+
+	console.log(objectEl);
 
 	event.currentTarget.reset();
 };

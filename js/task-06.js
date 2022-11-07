@@ -12,11 +12,11 @@ const inputHandler = event => {
 	}
 };
 
-const focusHandler = event => {
-	event.target.value = ``;
-	refs.inputField.classList.remove(`valid`);
-	refs.inputField.classList.remove(`invalid`);
-};
+// const focusHandler = event => {
+// 	event.target.value = ``;
+// 	refs.inputField.classList.remove(`valid`);
+// 	refs.inputField.classList.remove(`invalid`);
+// };
 
 refs.inputField.addEventListener(`blur`, inputHandler);
-refs.inputField.addEventListener(`focus`, focusHandler);
+// refs.inputField.addEventListener(`focus`, focusHandler);
